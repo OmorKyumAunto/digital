@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Asset</title>
+    <link rel="stylesheet" href="addstyle.css">
+</head>
+
+<bodynav>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="image/DBL_Logo.png" alt="Logo" class="logo-img">
+        </div>
+
+        <ul class="navbar-menu" id="navbar-menu">
+            <li><a href="dashboard.html">Back To Home</a></li>
+            <li><a href="stock.html">Assets</a></li>
+            <li><a href="assignedAsset.html">Assigned Assets</a></li>
+
+        </ul>
+        
+        <div class="navbar-toggle" id="navbar-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </nav>
+
+</bodynav>
+
+
+<body>
+
+    <main>
+        
+        <section id="add-asset">
+            <h2>Add New Asset</h2>
+            <form id="assetForm">
+                <label for="assetName">Asset Name:</label>
+                <input type="text" id="assetName" name="assetName" required>
+                <label for="assetType">Asset Type:</label>
+                <select id="assetType" name="assetType" required>
+                    <option value="Laptop">Laptop</option>
+                    <option value="Desktop">Desktop</option>
+                    <option value="Printers">Printers</option>
+                    <option value="Accessories">Accessories</option>
+                </select>
+                <label for="purchaseDate">Purchase Date:</label>
+                <input type="date" id="purchaseDate" name="purchaseDate" required>
+                <label for="value">Serial No:</label>
+                <input type="text" id="value" name="value" required>
+
+                <label for="grnNo">GRN No:</label>
+                <input type="text" id="grnNo" name="grnNo" required>
+
+                <label for="assigned">Assigned:</label>
+                <select id="assigned" name="assigned" required>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+
+                <button type="submit">Add Asset</button>
+            </form>
+        </section>
+
+    
+        <section id="asset-list">
+            <h2>Asset List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Asset Name</th>
+                        <th>Asset Type</th>
+                        <th>Purchase Date</th>
+                        <th>Serial No</th>
+                        <th>GRN No</th>
+                        <th>Assigned</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="assetTableBody">
+                    <!-- Asset rows will be added here dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+
+    <script src="addscript.js"></script>
+</body>
+<bodyfoot>
+    <footer>
+        <p>&copy; DBL Digital Ltd</p>
+    </footer>
+</bodyfoot>
+
+</html>

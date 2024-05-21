@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JTML Asset Stock</title>
+    <link rel="stylesheet" href="stockStyle.css">
+</head>
+<bodynav>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="image/DBL_Logo.png" alt="Logo" class="logo-img">
+        </div>
+
+        <ul class="navbar-menu" id="navbar-menu">
+            <li><a href="dashboard.html">Back To Home</a></li>
+            <li><a href="assignedAsset.html">Assigned Assets</a></li>
+            <li><a href="Add_Asset.html">Manage Assets</a></li>
+
+        </ul>
+        
+        <div class="navbar-toggle" id="navbar-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </nav>
+
+</bodynav>
+
+<body>
+    <h1>JTML Asset Stock</h1>
+
+    <div id="search-container">
+        <label for="search-input">Search by Serial No or GRN No:</label>
+        <input type="text" id="search-input" placeholder="Enter Serial No or GRN No">
+    </div>
+    <div id="button-container">
+        <button id="print-table">Print Table</button>
+        <button id="export-excel">Export to Excel</button>
+    </div>
+
+    <div id="asset-table-container">
+        <table id="asset-table">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Asset Name</th>
+                    <th>Serial No</th>
+                    <th>GRN No</th>
+                    <th>Specifications</th>
+                    <th>Remarks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically inserted here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer">© DBL Digital Ltd
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="stock.js"></script>
+</body>
+
+</html>

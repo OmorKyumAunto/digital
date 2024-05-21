@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="image/DBL_Logo.png" alt="Company Logo">
+        </div>
+        <div class="form-container">
+            <form id="loginForm" onsubmit="return authenticate(event)">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <label for="employeeId">Employee ID</label>
+                    <input type="text" id="employeeId" name="employeeId" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" onclick="showSignup()">Sign Up</a></p>
+            </form>
+
+            <form id="signupForm" onsubmit="return signup(event)">
+                <h2>Sign Up</h2>
+                <div class="input-group">
+                    <label for="employeeName">Employee Name</label>
+                    <input type="text" id="employeeName" name="employeeName" required>
+                </div>
+                <div class="input-group">
+                    <label for="employeeIdSignup">Employee ID</label>
+                    <input type="text" id="employeeIdSignup" name="employeeIdSignup" required>
+                </div>
+                <div class="input-group">
+                    <label for="unitName">Unit Name</label>
+                    <input type="text" id="unitName" name="unitName" required>
+                </div>
+                <div class="input-group">
+                    <label for="newPassword">Password</label>
+                    <input type="password" id="newPassword" name="newPassword" required>
+                </div>
+                <button type="submit">Sign Up</button>
+                <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+            </form>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

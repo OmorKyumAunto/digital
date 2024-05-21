@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Assigned Employee List</title>
+    <link rel="stylesheet" href="assignedStyle.css">
+</head>
+<bodynav>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="image/DBL_Logo.png" alt="Logo" class="logo-img">
+        </div>
+
+        <ul class="navbar-menu" id="navbar-menu">
+            <li><a href="dashboard.html">Back To Home</a></li>
+            <li><a href="stock.html">Assets</a></li>
+            <li><a href="Add_Asset.html">Manage Assets</a></li>
+
+        </ul>
+        
+        <div class="navbar-toggle" id="navbar-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </nav>
+
+</bodynav>
+
+
+
+<body>
+    <div class="container">
+        <h1>Employee Wise Asset List</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search by Employee ID or Serial No">
+        </div>
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Employee Name</th>
+                    <th>Unit Name</th>
+                    <th>Asset Name</th>
+                    <th>Serial No</th>
+                    <th>GRN No</th>
+                    <th>Remarks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- JavaScript will dynamically insert rows here -->
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        DBL Digital Ltd
+    </footer>
+    <script src="assignedscript.js"></script>
+</body>
+</html>
